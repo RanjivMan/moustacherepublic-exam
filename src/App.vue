@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<main class="container">
+		<Home>
+		</Home>
+	</main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Home    from './components/Home.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+	name: 'App',
+	components: {
+    Home: Home
+	},
+
+	data() {
+		return {
+
+		}
+	},
 }
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+  
+	* {
+		font-family: 'Nunito', sans-serif;
+		box-sizing: border-box;
+		padding:0;
+		margin:0;
+		outline: none;
+	}
+  
+	.container {
+		height: auto;
+		width: 100%;
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+    gap: 2rem;
+	}
 </style>
